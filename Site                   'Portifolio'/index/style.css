@@ -1,0 +1,94 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    display: grid;
+    grid-template-areas:
+    "header header"
+    "main section"
+    "footer footer";
+    grid-template-rows: 30px 1fr 30px;
+    grid-template-columns: 45% 55%;
+    background-image: url(../img/planodefundo.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+header,nav{
+    grid-area: header;
+    justify-content: space-between;
+    align-items: center;
+}
+main{
+    grid-area:main;
+    position: relative;
+    left: 10px;
+    width: 71%;
+    height: 35%;
+    border: 1px solid greenyellow;
+}
+section{
+    grid-area:section;
+    width: 30%;
+    height: 30%;
+}
+article{
+    margin-top: 500px;
+    border: 3px dashed yellowgreen;
+}
+footer{
+    grid-area:footer;
+    text-align: center;
+}
+
+h1{
+    font-family: 'Playfair Display', serif;
+    color:greenyellow;
+    margin-left: 20%;
+}
+p{
+    margin-left: 1%;
+    color: white;
+}
+.hr{
+    position: relative;
+    left: 40%;
+    width:700px;
+    height: 500px;
+}
+.Legenda{
+    position: relative;
+    left: 40%;
+    color: white;
+    width:700px;
+    margin-bottom: 50px;
+}
+.vr{
+    position: relative;
+    left: 40%;
+    width: 700px;
+    height: 500%;
+}
+a{
+    position: relative;
+    left: 10px;
+    text-decoration: none;
+    color: rgba(81, 81, 240, 0.815);
+}
+#link2{
+    position: relative;
+    left: 30px;
+    text-decoration: none;
+    color: rgba(81, 81, 240, 0.815);
+}
+#definições{
+    position: relative;
+    left: 80%;
+    text-decoration: none;
+    color: rgba(81, 81, 240, 0.815);
+}
+nav a:hover{
+    background-color: rgba(219, 113, 14, 0.747);
+}
